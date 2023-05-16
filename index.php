@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!--MDL theme-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-red.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
 
     <!--Title-->
     <title>Factorials Webpage</title>
@@ -47,19 +47,20 @@
     <?php echo "<h3>Please enter your input below:</h3>"; ?>
 
     <!--Form for user input-->
-    <form action="./calculations.php" method="post" target="results">
-    <label for="number">Enter a integer:</label>
-        <input type="number" step="1" id="number" placeholder="(As a whole number) ...">
+    <form action="./calculations.php" method="post" target="results"/>
+      <label for="number">Enter a number:</label>
+      <input type="number" step="1" id="number" name="number" placeholder="Your number...">
       <br>
       <br>
 
-    <!--Adding id to submit button to style button-->
+      <!--Adding id to submit button to style button-->
       <input type="submit" id="calculate" value="Calculate!" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    </form>
     <br>
     <br>
 
     <!--Iframe results for the number ranges that will be displayed-->
-    <div id="results"></div>
+    <iframe id="results" name="results"></iframe>
     <br>
   </body>
 </html>
