@@ -55,12 +55,12 @@
 
       <!--Adding id to submit button to style button-->
       <input type="submit" id="calculate" value="Calculate!" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-    </form>
     <br>
     <br>
 
     <!--Iframe results for the number ranges that will be displayed-->
     <iframe id="results" name="results"></iframe>
     <br>
+    </form>
   </body>
 </html>
