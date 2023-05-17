@@ -20,7 +20,7 @@ else if ($userNum < 0) {
 // Else, let the DO...WHILE loop to calculate the factorial.
 else {
 
-  // Using a DO...WHILE loop to find factorial of user's number.
+  // Using a DO...WHILE loop to find the factorial of the user's number.
   do {
     $factorialResult = $factorialResult * $counter;
     $counter = $counter + 1;
