@@ -1,31 +1,33 @@
 <?php
 
-//initializing variables
+// Initializing counter and factorial results variables.
 $counter = 1;
 $factorialResult = 1;
 
-//getting user input for number
+// Getting user input number for factorial calculations. 
 $userNum = $_POST['number'];
 
-//If: if user enters nothing
+// If, the user enters nothing, display "Please enter a valid number". 
 if ((!is_numeric($userNum)) ) {
   echo "Please enter a valid number.";
 }
 
-//Else if: if user enters a negative number
+// Else if, the user enters a negative number, display "Please enter a positive number".
 else if ($userNum < 0) {
   echo "Please enter a positive number.";
 }
 
-//Else: let the do-while loop execute to calculate the factorial
+// Else, let the DO...WHILE loop to calculate the factorial.
 else {
-  //using a do...while loop to find factorial of inputted number
+
+  // Using a DO...WHILE loop to find factorial of user's number.
   do {
     $factorialResult = $factorialResult * $counter;
     $counter = $counter + 1;
-  } while ($counter <= $userNum);
+  } 
+    while ($counter <= $userNum);
 
-  //displaying factorial to the screen
+  // Displaying factorial to the screen.
   echo "The factorial of your inputted number (!" . $userNum . ") = " . $factorialResult . ".";
 }
 

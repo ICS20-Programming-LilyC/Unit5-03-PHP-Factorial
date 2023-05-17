@@ -34,8 +34,8 @@
 
     <!--Welcoming message-->
     <center>
-    <?php echo "<p>Welcome to my factorial number webpage. On my webpage you can input an integer and I will calculate the product of these numbers using a DO... WHILE loop.</p>"; ?>
-    </center>
+      <?php echo "<p>Welcome to my factorial number webpage. On my webpage you can input an integer and I will calculate the product of these numbers using a DO... WHILE loop.</p>"; ?>
+  </center>
 
     <!--Image-->
     <br>
@@ -53,14 +53,14 @@
       <br>
       <br>
 
-      <!--Adding id to submit button to style button-->
+    <!--Adding id to submit button to style button-->
       <input type="submit" id="calculate" value="Calculate!" button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
     </form>
-    <br>
-    <br>
+      <br>
+      <br>
 
     <!--Iframe results for the number ranges that will be displayed-->
     <iframe id="results" name="results"></iframe>
-    <br>
+      <br>
   </body>
 </html>
